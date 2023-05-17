@@ -1,0 +1,14 @@
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Ali/College/Graduation Project/uvm examples/tinyALU/with_agent/questa_project/test.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Ali/College/Graduation Project/uvm examples/tinyALU/with_agent/questa_project/test.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Ali/College/Graduation Project/uvm examples/tinyALU/with_agent/questa_project/test.mpf).  File can not be renamed.
+# End time: 15:15:56 on May 17,2023, Elapsed time: 0:08:44
+# Errors: 3, Warnings: 1
+# reading C:/questasim64_2021.1/win64/../modelsim.ini
+# Loading project comp

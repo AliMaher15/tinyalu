@@ -1,0 +1,564 @@
+# QuestaSim-64 vcom 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 15:06:36 on May 17,2023
+# vcom -reportprogress 300 -f dut.f 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity single_cycle
+# -- Compiling architecture add_and_xor of single_cycle
+# -- Compiling entity three_cycle
+# -- Compiling architecture mult of three_cycle
+# -- Compiling entity tinyalu
+# -- Compiling architecture rtl of tinyalu
+# -- Loading entity single_cycle
+# -- Loading entity three_cycle
+# End time: 15:06:36 on May 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 15:06:37 on May 17,2023
+# vlog -reportprogress 300 -f tb.f 
+# -- Compiling package tinyalu_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# ** Note: (vlog-2286) tinyalu_pkg.sv(5): Using implicit +incdir+C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling interface tinyalu_bfm
+# -- Importing package tinyalu_pkg
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 15:06:37 on May 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 15:06:37 on May 17,2023
+# vopt -reportprogress 300 top -o top_optimized "+acc" "+cover=sbfec+tinyalu(rtl)." 
+# 
+# Top level modules:
+# 	top
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package tinyalu_pkg
+# -- Loading package mtiUvm.questa_uvm_pkg
+# -- Loading interface tinyalu_bfm
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading entity tinyalu
+# -- Loading architecture rtl of tinyalu
+# -- Loading entity single_cycle
+# -- Loading entity three_cycle
+# -- Loading architecture add_and_xor of single_cycle
+# -- Loading architecture mult of three_cycle
+# Optimizing 9 design-units (inlining 0/2 module instances, 0/3 architecture instances):
+# -- Optimizing architecture rtl of tinyalu
+# -- Optimizing architecture add_and_xor of single_cycle
+# -- Optimizing architecture mult of three_cycle
+# -- Optimizing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)(fast)
+# -- Optimizing package mtiUvm.questa_uvm_pkg(fast)
+# -- Optimizing package tinyalu_pkg(fast)
+# -- Optimizing interface tinyalu_bfm(fast__2)
+# -- Optimizing module top(fast)
+# -- Optimizing interface tinyalu_bfm(fast)
+# Optimized design name is top_optimized
+# End time: 15:06:40 on May 17,2023, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# vsim top_optimized -coverage "+UVM_TESTNAME=fibonacci_test" 
+# Start time: 15:06:40 on May 17,2023
+# Loading sv_std.std
+# Loading work.tinyalu_bfm(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.tinyalu_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading work.tinyalu_bfm(fast__2)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.tinyalu(rtl)#1
+# Loading work.single_cycle(add_and_xor)#1
+# Loading work.three_cycle(mult)#1
+# Loading C:/questasim64_2021.1/uvm-1.1d\win64\uvm_dpi.dll
+# 1
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test fibonacci_test...
+# ------------------------------------------------------------------
+# Name                       Type                        Size  Value
+# ------------------------------------------------------------------
+# uvm_test_top               fibonacci_test              -     @473 
+#   env_h                    env                         -     @484 
+#     tinyalu_agent_h        tinyalu_agent               -     @495 
+#       command_monitor_h    command_monitor             -     @745 
+#         ap                 uvm_analysis_port           -     @790 
+#       coverage_h           coverage                    -     @759 
+#         analysis_imp       uvm_analysis_imp            -     @766 
+#       driver_h             driver                      -     @613 
+#         rsp_port           uvm_analysis_port           -     @628 
+#         seq_item_port      uvm_seq_item_pull_port      -     @620 
+#       result_monitor_h     result_monitor              -     @752 
+#         ap                 uvm_analysis_port           -     @799 
+#       scoreboard_h         scoreboard                  -     @774 
+#         analysis_imp       uvm_analysis_imp            -     @781 
+#         cmd_f              uvm_tlm_analysis_fifo #(T)  -     @807 
+#           analysis_export  uvm_analysis_imp            -     @846 
+#           get_ap           uvm_analysis_port           -     @838 
+#           get_peek_export  uvm_get_peek_imp            -     @822 
+#           put_ap           uvm_analysis_port           -     @830 
+#           put_export       uvm_put_imp                 -     @814 
+#       sqr_h                tinyalu_sequencer           -     @636 
+#         rsp_export         uvm_analysis_export         -     @643 
+#         seq_item_export    uvm_seq_item_pull_imp       -     @737 
+#         arbitration_queue  array                       0     -    
+#         lock_queue         array                       0     -    
+#         num_last_reqs      integral                    32    'd1  
+#         num_last_rsps      integral                    32    'd1  
+#     v_sqr_h                vsequencer                  -     @502 
+#       rsp_export           uvm_analysis_export         -     @509 
+#       seq_item_export      uvm_seq_item_pull_imp       -     @603 
+#       arbitration_queue    array                       0     -    
+#       lock_queue           array                       0     -    
+#       num_last_reqs        integral                    32    'd1  
+#       num_last_rsps        integral                    32    'd1  
+# ------------------------------------------------------------------
+# 
+#### Factory Configuration (*)
+# 
+#   No instance or type overrides are registered with this factory
+# 
+# All types registered with the factory: 62 total
+# (types without type names will not be printed)
+# 
+#   Type Name
+#   ---------
+#   command_monitor
+#   coverage
+#   driver
+#   env
+#   fibonacci_sequence
+#   fibonacci_test
+#   full_test
+#   maxmult_sequence
+#   parallel_test
+#   questa_uvm_recorder
+#   random_sequence
+#   reset_sequence
+#   result_monitor
+#   result_transaction
+#   scoreboard
+#   sequence_item
+#   short_random_sequence
+#   tinyalu_agent
+#   tinyalu_base_test
+#   tinyalu_sequencer
+#   v_parallel_sequence
+#   v_runall_sequence
+#   v_seq_fibonacci
+#   vseq_base
+#   vsequencer
+# (*) Types with no associated type name will be printed as <unknown>
+# 
+####
+# 
+# UVM_INFO tb_classes/test_lib/fibonacci_test.svh(23) @ 0: uvm_test_top [fibonacci_test run] Starting test
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(31) @ 31: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibo_seq_h [FIBONACCI]  Fib(01) = 00
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(32) @ 31: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibo_seq_h [FIBONACCI]  Fib(02) = 01
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 60: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibo_seq_h [FIBONACCI] Fib( 3) =  1
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 100: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibo_seq_h [FIBONACCI] Fib( 4) =  2
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 140: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibo_seq_h [FIBONACCI] Fib( 5) =  3
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 180: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibo_seq_h [FIBONACCI] Fib( 6) =  5
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 220: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibo_seq_h [FIBONACCI] Fib( 7) =  8
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 260: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibo_seq_h [FIBONACCI] Fib( 8) = 13
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 300: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibo_seq_h [FIBONACCI] Fib( 9) = 21
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 340: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibo_seq_h [FIBONACCI] Fib(10) = 34
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 380: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibo_seq_h [FIBONACCI] Fib(11) = 55
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 420: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibo_seq_h [FIBONACCI] Fib(12) = 89
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 460: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibo_seq_h [FIBONACCI] Fib(13) = 144
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 500: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibo_seq_h [FIBONACCI] Fib(14) = 233
+# UVM_INFO tb_classes/test_lib/fibonacci_test.svh(25) @ 500: uvm_test_top [fibonacci_test run] Ending test
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 500: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   20
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [FIBONACCI]    14
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [fibonacci_test run]     2
+# ** Note: $finish    : C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 500 ns  Iteration: 65  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Ali/College/Graduation Project/uvm examples/tinyALU/with_agent/questa_project/test.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Ali/College/Graduation Project/uvm examples/tinyALU/with_agent/questa_project/test.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Ali/College/Graduation Project/uvm examples/tinyALU/with_agent/questa_project/test.mpf).  File can not be renamed.
+# End time: 15:06:56 on May 17,2023, Elapsed time: 0:00:16
+# Errors: 3, Warnings: 1
+# vsim top_optimized -coverage "+UVM_TESTNAME=parallel_test" 
+# Start time: 15:06:56 on May 17,2023
+# Loading sv_std.std
+# Loading work.tinyalu_bfm(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.tinyalu_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading work.tinyalu_bfm(fast__2)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.tinyalu(rtl)#1
+# Loading work.single_cycle(add_and_xor)#1
+# Loading work.three_cycle(mult)#1
+# Loading C:/questasim64_2021.1/uvm-1.1d\win64\uvm_dpi.dll
+# 1
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test parallel_test...
+# ------------------------------------------------------------------
+# Name                       Type                        Size  Value
+# ------------------------------------------------------------------
+# uvm_test_top               parallel_test               -     @473 
+#   env_h                    env                         -     @484 
+#     tinyalu_agent_h        tinyalu_agent               -     @495 
+#       command_monitor_h    command_monitor             -     @745 
+#         ap                 uvm_analysis_port           -     @790 
+#       coverage_h           coverage                    -     @759 
+#         analysis_imp       uvm_analysis_imp            -     @766 
+#       driver_h             driver                      -     @613 
+#         rsp_port           uvm_analysis_port           -     @628 
+#         seq_item_port      uvm_seq_item_pull_port      -     @620 
+#       result_monitor_h     result_monitor              -     @752 
+#         ap                 uvm_analysis_port           -     @799 
+#       scoreboard_h         scoreboard                  -     @774 
+#         analysis_imp       uvm_analysis_imp            -     @781 
+#         cmd_f              uvm_tlm_analysis_fifo #(T)  -     @807 
+#           analysis_export  uvm_analysis_imp            -     @846 
+#           get_ap           uvm_analysis_port           -     @838 
+#           get_peek_export  uvm_get_peek_imp            -     @822 
+#           put_ap           uvm_analysis_port           -     @830 
+#           put_export       uvm_put_imp                 -     @814 
+#       sqr_h                tinyalu_sequencer           -     @636 
+#         rsp_export         uvm_analysis_export         -     @643 
+#         seq_item_export    uvm_seq_item_pull_imp       -     @737 
+#         arbitration_queue  array                       0     -    
+#         lock_queue         array                       0     -    
+#         num_last_reqs      integral                    32    'd1  
+#         num_last_rsps      integral                    32    'd1  
+#     v_sqr_h                vsequencer                  -     @502 
+#       rsp_export           uvm_analysis_export         -     @509 
+#       seq_item_export      uvm_seq_item_pull_imp       -     @603 
+#       arbitration_queue    array                       0     -    
+#       lock_queue           array                       0     -    
+#       num_last_reqs        integral                    32    'd1  
+#       num_last_rsps        integral                    32    'd1  
+# ------------------------------------------------------------------
+# 
+#### Factory Configuration (*)
+# 
+#   No instance or type overrides are registered with this factory
+# 
+# All types registered with the factory: 62 total
+# (types without type names will not be printed)
+# 
+#   Type Name
+#   ---------
+#   command_monitor
+#   coverage
+#   driver
+#   env
+#   fibonacci_sequence
+#   fibonacci_test
+#   full_test
+#   maxmult_sequence
+#   parallel_test
+#   questa_uvm_recorder
+#   random_sequence
+#   reset_sequence
+#   result_monitor
+#   result_transaction
+#   scoreboard
+#   sequence_item
+#   short_random_sequence
+#   tinyalu_agent
+#   tinyalu_base_test
+#   tinyalu_sequencer
+#   v_parallel_sequence
+#   v_runall_sequence
+#   v_seq_fibonacci
+#   vseq_base
+#   vsequencer
+# (*) Types with no associated type name will be printed as <unknown>
+# 
+####
+# 
+# UVM_INFO tb_classes/test_lib/parallel_test.svh(11) @ 0: uvm_test_top [parallel_test run] Starting test
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(31) @ 71: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibonacci_h [FIBONACCI]  Fib(01) = 00
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(32) @ 71: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibonacci_h [FIBONACCI]  Fib(02) = 01
+# UVM_INFO tb_classes/seq_lib/short_random_sequence.svh(34) @ 100: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.short_random_h [SHORT RANDOM] random command: A: c8   B: 85  op: add_op = 014d
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 140: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibonacci_h [FIBONACCI] Fib( 3) =  1
+# UVM_INFO tb_classes/seq_lib/short_random_sequence.svh(34) @ 180: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.short_random_h [SHORT RANDOM] random command: A: b8   B: 94  op: add_op = 014c
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 220: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibonacci_h [FIBONACCI] Fib( 4) =  2
+# UVM_INFO tb_classes/seq_lib/short_random_sequence.svh(34) @ 260: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.short_random_h [SHORT RANDOM] random command: A: 53   B: cd  op: and_op = 0041
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 300: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibonacci_h [FIBONACCI] Fib( 5) =  3
+# UVM_INFO tb_classes/seq_lib/short_random_sequence.svh(34) @ 400: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.short_random_h [SHORT RANDOM] random command: A: 26   B: 3b  op: mul_op = 08c2
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 440: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibonacci_h [FIBONACCI] Fib( 6) =  5
+# UVM_INFO tb_classes/seq_lib/short_random_sequence.svh(34) @ 480: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.short_random_h [SHORT RANDOM] random command: A: e4   B: 67  op: and_op = 0064
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 520: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibonacci_h [FIBONACCI] Fib( 7) =  8
+# UVM_INFO tb_classes/seq_lib/short_random_sequence.svh(34) @ 560: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.short_random_h [SHORT RANDOM] random command: A: a1   B: 19  op: and_op = 0001
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 600: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibonacci_h [FIBONACCI] Fib( 8) = 13
+# UVM_INFO tb_classes/seq_lib/short_random_sequence.svh(34) @ 640: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.short_random_h [SHORT RANDOM] random command: A: ca   B: f6  op: xor_op = 003c
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 680: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibonacci_h [FIBONACCI] Fib( 9) = 21
+# UVM_INFO tb_classes/seq_lib/short_random_sequence.svh(34) @ 780: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.short_random_h [SHORT RANDOM] random command: A: 66   B: 20  op: mul_op = 0cc0
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 820: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibonacci_h [FIBONACCI] Fib(10) = 34
+# UVM_INFO tb_classes/seq_lib/short_random_sequence.svh(34) @ 851: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.short_random_h [SHORT RANDOM] random command: A: ec   B: 73  op: rst_op = 0022
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 880: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibonacci_h [FIBONACCI] Fib(11) = 55
+# UVM_INFO tb_classes/seq_lib/short_random_sequence.svh(34) @ 920: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.short_random_h [SHORT RANDOM] random command: A: f8   B: 28  op: xor_op = 00d0
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 960: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibonacci_h [FIBONACCI] Fib(12) = 89
+# UVM_INFO tb_classes/seq_lib/short_random_sequence.svh(34) @ 1000: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.short_random_h [SHORT RANDOM] random command: A: c1   B: ed  op: and_op = 00c1
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 1040: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibonacci_h [FIBONACCI] Fib(13) = 144
+# UVM_INFO tb_classes/seq_lib/short_random_sequence.svh(34) @ 1080: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.short_random_h [SHORT RANDOM] random command: A: 1b   B: 41  op: xor_op = 005a
+# UVM_INFO tb_classes/seq_lib/fibonacci_sequence.svh(44) @ 1120: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.fibonacci_h [FIBONACCI] Fib(14) = 233
+# UVM_INFO tb_classes/seq_lib/short_random_sequence.svh(34) @ 1160: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.short_random_h [SHORT RANDOM] random command: A: f3   B: 14  op: and_op = 0010
+# UVM_INFO tb_classes/seq_lib/short_random_sequence.svh(34) @ 1200: uvm_test_top.env_h.tinyalu_agent_h.sqr_h@@vseq.short_random_h [SHORT RANDOM] random command: A: 63   B: 6a  op: xor_op = 0009
+# UVM_INFO tb_classes/test_lib/parallel_test.svh(13) @ 1200: uvm_test_top [parallel_test run] Ending test
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 1200: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   34
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [FIBONACCI]    14
+# [Questa UVM]     2
+# [RNTST]     1
+# [SHORT RANDOM]    14
+# [TEST_DONE]     1
+# [parallel_test run]     2
+# ** Note: $finish    : C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 1200 ns  Iteration: 65  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Ali/College/Graduation Project/uvm examples/tinyALU/with_agent/questa_project/test.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Ali/College/Graduation Project/uvm examples/tinyALU/with_agent/questa_project/test.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Ali/College/Graduation Project/uvm examples/tinyALU/with_agent/questa_project/test.mpf).  File can not be renamed.
+# End time: 15:07:12 on May 17,2023, Elapsed time: 0:00:16
+# Errors: 3, Warnings: 1
+# vsim top_optimized -coverage "+UVM_TESTNAME=full_test" 
+# Start time: 15:07:12 on May 17,2023
+# Loading sv_std.std
+# Loading work.tinyalu_bfm(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.tinyalu_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading work.tinyalu_bfm(fast__2)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.tinyalu(rtl)#1
+# Loading work.single_cycle(add_and_xor)#1
+# Loading work.three_cycle(mult)#1
+# Loading C:/questasim64_2021.1/uvm-1.1d\win64\uvm_dpi.dll
+# 1
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test full_test...
+# ------------------------------------------------------------------
+# Name                       Type                        Size  Value
+# ------------------------------------------------------------------
+# uvm_test_top               full_test                   -     @473 
+#   env_h                    env                         -     @484 
+#     tinyalu_agent_h        tinyalu_agent               -     @495 
+#       command_monitor_h    command_monitor             -     @745 
+#         ap                 uvm_analysis_port           -     @790 
+#       coverage_h           coverage                    -     @759 
+#         analysis_imp       uvm_analysis_imp            -     @766 
+#       driver_h             driver                      -     @613 
+#         rsp_port           uvm_analysis_port           -     @628 
+#         seq_item_port      uvm_seq_item_pull_port      -     @620 
+#       result_monitor_h     result_monitor              -     @752 
+#         ap                 uvm_analysis_port           -     @799 
+#       scoreboard_h         scoreboard                  -     @774 
+#         analysis_imp       uvm_analysis_imp            -     @781 
+#         cmd_f              uvm_tlm_analysis_fifo #(T)  -     @807 
+#           analysis_export  uvm_analysis_imp            -     @846 
+#           get_ap           uvm_analysis_port           -     @838 
+#           get_peek_export  uvm_get_peek_imp            -     @822 
+#           put_ap           uvm_analysis_port           -     @830 
+#           put_export       uvm_put_imp                 -     @814 
+#       sqr_h                tinyalu_sequencer           -     @636 
+#         rsp_export         uvm_analysis_export         -     @643 
+#         seq_item_export    uvm_seq_item_pull_imp       -     @737 
+#         arbitration_queue  array                       0     -    
+#         lock_queue         array                       0     -    
+#         num_last_reqs      integral                    32    'd1  
+#         num_last_rsps      integral                    32    'd1  
+#     v_sqr_h                vsequencer                  -     @502 
+#       rsp_export           uvm_analysis_export         -     @509 
+#       seq_item_export      uvm_seq_item_pull_imp       -     @603 
+#       arbitration_queue    array                       0     -    
+#       lock_queue           array                       0     -    
+#       num_last_reqs        integral                    32    'd1  
+#       num_last_rsps        integral                    32    'd1  
+# ------------------------------------------------------------------
+# 
+#### Factory Configuration (*)
+# 
+#   No instance or type overrides are registered with this factory
+# 
+# All types registered with the factory: 62 total
+# (types without type names will not be printed)
+# 
+#   Type Name
+#   ---------
+#   command_monitor
+#   coverage
+#   driver
+#   env
+#   fibonacci_sequence
+#   fibonacci_test
+#   full_test
+#   maxmult_sequence
+#   parallel_test
+#   questa_uvm_recorder
+#   random_sequence
+#   reset_sequence
+#   result_monitor
+#   result_transaction
+#   scoreboard
+#   sequence_item
+#   short_random_sequence
+#   tinyalu_agent
+#   tinyalu_base_test
+#   tinyalu_sequencer
+#   v_parallel_sequence
+#   v_runall_sequence
+#   v_seq_fibonacci
+#   vseq_base
+#   vsequencer
+# (*) Types with no associated type name will be printed as <unknown>
+# 
+####
+# 
+# UVM_INFO tb_classes/test_lib/full_test.svh(7) @ 0: uvm_test_top [full_test run] Starting test
+# UVM_INFO tb_classes/test_lib/full_test.svh(9) @ 258620: uvm_test_top [full_test run] Ending test
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 258620: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    6
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [full_test run]     2
+# ** Note: $finish    : C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 258620 ns  Iteration: 65  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 15:07:27 on May 17,2023
+# vcover merge functional_coverage/tinyalu.ucdb functional_coverage/fibonacci_test.ucdb functional_coverage/parallel_test.ucdb functional_coverage/full_test.ucdb 
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Merging file functional_coverage/fibonacci_test.ucdb
+# Merging file functional_coverage/parallel_test.ucdb
+# Merging file functional_coverage/full_test.ucdb
+# Writing merged result to functional_coverage/tinyalu.ucdb
+# 
+# End time: 15:07:27 on May 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 15:07:27 on May 17,2023
+# vcover report functional_coverage/tinyalu.ucdb -cvg -details -output functional_coverage/tinyalu_coverage.txt 
+# End time: 15:07:27 on May 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

@@ -1,0 +1,49 @@
+Coverage Report Summary Data by instance
+
+=================================================================================
+=== Instance: /top/DUT/add_and_xor
+=== Design Unit: work.single_cycle(add_and_xor)
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        13        13         0   100.00%
+    Conditions                       2         2         0   100.00%
+    Statements                       9         9         0   100.00%
+
+=================================================================================
+=== Instance: /top/DUT/mult
+=== Design Unit: work.three_cycle(mult)
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         2         0   100.00%
+    Expressions                      8         7         1    87.50%
+    Statements                      19        19         0   100.00%
+
+=================================================================================
+=== Instance: /top/DUT
+=== Design Unit: work.tinyalu(rtl)
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         9         9         0   100.00%
+    Statements                      15        15         0   100.00%
+
+=================================================================================
+=== Instance: /tinyalu_pkg
+=== Design Unit: work.tinyalu_pkg
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Assertions                       1         1         0   100.00%
+    Covergroups                      2        na        na   100.00%
+        Coverpoints/Crosses          5        na        na        na
+            Covergroup Bins         48        48         0   100.00%
+
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 2
+
+TOTAL ASSERTION COVERAGE: 100.00%  ASSERTIONS: 1
+
+Total Coverage By Instance (filtered view): 97.91%
+

@@ -1,0 +1,281 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f MIXED_VERSIONS
+!s11e vcom 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Ali/College/Graduation Project/uvm examples/tinyALU/with_agent/questa_project
+Esingle_cycle
+Z1 w1626697571
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z5 8tinyalu_dut/single_cycle_add_and_xor.vhd
+Z6 Ftinyalu_dut/single_cycle_add_and_xor.vhd
+l0
+Z7 L18 1
+V:Ij;_;FPLzYGNoHM36T<T3
+!s100 ]zLNLiXkF=5o2aD7`HXaW0
+Z8 OL;C;2021.1;73
+32
+Z9 !s110 1684325196
+!i10b 1
+Z10 !s108 1684325196.000000
+Z11 !s90 -reportprogress|300|-f|dut.f|
+Z12 !s107 tinyalu_dut/tinyalu.vhd|tinyalu_dut/three_cycle_mult.vhd|tinyalu_dut/single_cycle_add_and_xor.vhd|
+!i113 0
+Z13 tExplicit 1 CvgOpt 0
+Aadd_and_xor
+R2
+R3
+R4
+Z14 DEx4 work 12 single_cycle 0 22 :Ij;_;FPLzYGNoHM36T<T3
+!i122 0
+l40
+L35 55
+VjkdVIS:zWWe6YP958^c<?2
+!s100 W:@2=zMKJzNl_P<OV5DfD2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Ethree_cycle
+R1
+R2
+R3
+R4
+!i122 0
+R0
+Z15 8tinyalu_dut/three_cycle_mult.vhd
+Z16 Ftinyalu_dut/three_cycle_mult.vhd
+l0
+L21 1
+V?b?Bg9gU??:QULD5<blm`3
+!s100 OWV05@_zBTOgIT[g_`@_V3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Amult
+R2
+R3
+R4
+Z17 DEx4 work 11 three_cycle 0 22 ?b?Bg9gU??:QULD5<blm`3
+!i122 0
+l41
+L37 36
+Vj6cEdRYiFMdX3EY^<VQ851
+!s100 K_ZLdTS5BO0V_C<=]@faG2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Etinyalu
+R1
+R2
+R3
+R4
+!i122 0
+R0
+Z18 8tinyalu_dut/tinyalu.vhd
+Z19 Ftinyalu_dut/tinyalu.vhd
+l0
+R7
+VE[:oHD5fdaY_Kk8k;2L0L3
+!s100 IQSjkHCU25DWoNfhGl_?11
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Artl
+R17
+R14
+DEx4 work 7 tinyalu 0 22 E[:oHD5fdaY_Kk8k;2L0L3
+R2
+R3
+R4
+!i122 0
+l89
+L40 118
+VKh1ePSQ5Z8YETCNg6EeQ[2
+!s100 GoS^:b=iBjDfH4M1<@oN=2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Ytinyalu_bfm
+Z20 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z21 DXx6 mtiUvm 7 uvm_pkg 0 22 8V[`8]Q0W57le7Z>zYaAj1
+Z22 DXx4 work 11 tinyalu_pkg 0 22 f:J?4`^Kieh`SJAWUe>fC0
+Z23 !s110 1684325197
+!i10b 1
+!s100 DU4h]IF_d@Ed;07TNKecT1
+IeKi@^KFi5Z^_1[I289IAO1
+S1
+R0
+w1675957882
+8tinyalu_bfm.sv
+Ftinyalu_bfm.sv
+!i122 1
+Z24 L0 1 0
+Z25 VDg1SIo80bB@j0V0VzS_@n1
+Z26 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z27 !s108 1684325197.000000
+Z28 !s107 tb_classes/test_lib/full_test.svh|tb_classes/test_lib/parallel_test.svh|tb_classes/test_lib/fibonacci_test.svh|tb_classes/test_lib/tinyalu_base_test.svh|tb_classes/env.svh|tb_classes/test_lib/v_runall_sequence.svh|tb_classes/test_lib/v_parallel_sequence.svh|tb_classes/test_lib/v_seq_fibonacci.svh|tb_classes/test_lib/vseq_base.svh|tb_classes/vsequencer.svh|tb_classes/tinyalu_agent/tinyalu_agent.svh|tb_classes/tinyalu_agent/result_monitor.svh|tb_classes/tinyalu_agent/command_monitor.svh|tb_classes/scoreboard.svh|tb_classes/coverage.svh|tb_classes/tinyalu_agent/tinyalu_sequencer.svh|tb_classes/tinyalu_agent/driver.svh|tb_classes/seq_lib/maxmult_sequence.svh|tb_classes/seq_lib/short_random_sequence.svh|tb_classes/seq_lib/reset_sequence.svh|tb_classes/seq_lib/random_sequence.svh|tb_classes/seq_lib/fibonacci_sequence.svh|tb_classes/tinyalu_agent/result_transaction.svh|tb_classes/tinyalu_agent/sequence_item.svh|tb_classes/tinyalu_agent/tinyalu_agent_config.svh|tb_classes/env_config.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh|top.sv|tinyalu_bfm.sv|tinyalu_pkg.sv|
+Z29 !s90 -reportprogress|300|-f|tb.f|
+!i113 0
+Z30 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z31 !s92 +incdir+tb_classes +incdir+tb_classes/seq_lib +incdir+tb_classes/test_lib +incdir+tb_classes/tinyalu_agent -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z32 tCvgOpt 0
+Xtinyalu_pkg
+!s115 tinyalu_bfm
+R20
+R21
+R23
+!i10b 1
+!s100 YK3LmgD9IN3a`2bjPM;[z2
+If:J?4`^Kieh`SJAWUe>fC0
+S1
+R0
+w1676998731
+8tinyalu_pkg.sv
+Ftinyalu_pkg.sv
+Z33 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh
+Z34 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh
+Z35 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh
+Z36 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh
+Z37 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh
+Z38 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh
+Z39 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh
+Z40 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh
+Z41 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh
+Z42 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh
+Z43 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh
+Z44 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh
+Ftb_classes/env_config.svh
+Ftb_classes/tinyalu_agent/tinyalu_agent_config.svh
+Ftb_classes/tinyalu_agent/sequence_item.svh
+Ftb_classes/tinyalu_agent/result_transaction.svh
+Ftb_classes/seq_lib/fibonacci_sequence.svh
+Ftb_classes/seq_lib/random_sequence.svh
+Ftb_classes/seq_lib/reset_sequence.svh
+Ftb_classes/seq_lib/short_random_sequence.svh
+Ftb_classes/seq_lib/maxmult_sequence.svh
+Ftb_classes/tinyalu_agent/driver.svh
+Ftb_classes/tinyalu_agent/tinyalu_sequencer.svh
+Ftb_classes/coverage.svh
+Ftb_classes/scoreboard.svh
+Ftb_classes/tinyalu_agent/command_monitor.svh
+Ftb_classes/tinyalu_agent/result_monitor.svh
+Ftb_classes/tinyalu_agent/tinyalu_agent.svh
+Ftb_classes/vsequencer.svh
+Ftb_classes/test_lib/vseq_base.svh
+Ftb_classes/test_lib/v_seq_fibonacci.svh
+Ftb_classes/test_lib/v_parallel_sequence.svh
+Ftb_classes/test_lib/v_runall_sequence.svh
+Ftb_classes/env.svh
+Ftb_classes/test_lib/tinyalu_base_test.svh
+Ftb_classes/test_lib/fibonacci_test.svh
+Ftb_classes/test_lib/parallel_test.svh
+Ftb_classes/test_lib/full_test.svh
+!i122 1
+R24
+Vf:J?4`^Kieh`SJAWUe>fC0
+R26
+r1
+!s85 0
+31
+R27
+R28
+R29
+!i113 0
+R30
+R31
+R32
+vtop
+R20
+R21
+R22
+R23
+!i10b 1
+!s100 ]jWnW=FAOBmd:h8P^]McO2
+IamWj[gje=43okeo_9=_zW2
+S1
+R0
+w1676135842
+8top.sv
+Ftop.sv
+R33
+R34
+R35
+R36
+R37
+R38
+R39
+R40
+R41
+R42
+R43
+R44
+!i122 1
+L0 1 6495
+R25
+R26
+r1
+!s85 0
+31
+R27
+R28
+R29
+!i113 0
+R30
+R31
+R32
+Ttop_optimized
+!s11d Project/uvm examples/tinyALU/with_agent/questa_project/work 1 Project/uvm 1 examples/tinyALU/with_agent/questa_project/work 
+!s11d Project/uvm examples/tinyALU/with_agent/questa_project/work 1 tinyalu_bfm 1 D:/Ali/College/Graduation 
+!s11d tinyalu_pkg D:/Ali/College/Graduation 0 
+!s110 1684325198
+VKMdQE@^afFG8l@PbC>RnQ2
+04 3 4 work top fast 0
+!s124 OEM100
+o+acc +cover=sbfec+tinyalu(rtl).
+R32
+ntop_optimized
+OL;O;2021.1;73
